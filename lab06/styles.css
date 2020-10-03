@@ -8,6 +8,6 @@ h2 {
     font-size: 2em;
 }
 
-.evenrow {
+tr.evenrow {
     background-color: honeydew;
 }
