@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1">
         <title>Ziwen Wang-BIO</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="styles" href="style.css">
         <style>
-            /* Style tules go here */
+            /* Style rules go here */
             html {background-color: #ffbe99;}
             nav {padding: 20px; padding-right: 0px; padding-top: 10px; 
             font-size: 20px;}
             h1 {margin-left: 60px; padding-top: 20px;}
-            .myphoto {float: right; margin-right: 10px; margin-bottom: 10px;}
+            .myphoto {float: right; margin-right: 10px; margin-bottom: 10px; max-width: 100%;}
             .body {clear: both;}
             .slogan {float: right;}
-            .part2 {display: flex;}
+            .part2 {display: flex; flex-wrap: wrap;}
             article {flex: 50%; flex-basis: 0%; 
                 padding-left: 60px; margin-top: 110px; margin-bottom: 50px; 
             }
@@ -32,12 +32,23 @@
             } 
             .article1m .article2, .article3 {margin: 10px;}
             footer {margin: 10px;}
+            nav span {padding: 5px;}
+            @media only screen and (max-width: 600px)
+            {
+                html {background-color: #bbefff;
+                    padding: 30px;
+                }
+                nav a {display: block; padding: 10px;}
+                nav {margin-bottom: 10px;}
+                nav span {display: none;}
+            }            
+
         </style>
     </head>
     <body>
         <nav>
-            <a href = "index.html"><strong>Home</strong></a>
-            <a href = "contact_wang.html"><strong>Contact</strong></a>
+            <a href = "index.html"><strong>Home</strong></a><span>|</span>
+            <a href = "contact_wang.html"><strong>Contact</strong></a><span>|</span>
             <a href = "skills_wang.html"><strong>Skills</strong></a>
         </nav>
         <div class="introduction">
