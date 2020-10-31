@@ -9,7 +9,6 @@
         <style>
             html {background-color: #ffbe99;}
             .nav {margin-block: 10px;}
-            .skip {float: right;}
             .clear {clear: both;}
             .part1 {display: flex; flex-wrap: wrap; 
                 background-color: #ffffff; border-radius: 3em; padding: 20px;
@@ -47,7 +46,6 @@
 
     <body>
         <header>
-        <a class="skip" id="skip-to-content" href="index.html">Skip to Content</a>
         <nav class="nav">
             <a href = "index.html">Home</a><span>|</span>
             <a href = "contact_wang.html">Contact</a><span>|</span>
@@ -79,6 +77,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.3335451310677!2d-76.1426147489229!3d43.0554519987919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3ac2994e157%3A0x1eac450d218b8c!2s770%20James%20St%2C%20Syracuse%2C%20NY%2013203!5e0!3m2!1sen!2sus!4v1599868198497!5m2!1sen!2sus" class="map" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br>
                 <br>
                     <form action="mailto:zwang239@syr.edu" class="form" method="POST">
+                        <fieldset>
                         Your Basic Information<br>
                         <label for = "firstname">First Name</label>
                         <input type = "text" name = "firstname" id = "firstname">
@@ -106,13 +105,14 @@
                             <option value = "Senior">Senior</option>
                             <option>Grad</option>
                         </select><br><br>
+                        </fieldset>
 
                         What can help you?<br>
                         <label for="cooperative">cooperative with CSSA</label>
                         <input type="checkbox" id="cooperative" name="cooperative" value="Yes">
                         <label for="meet">Schedule a conversation</label>
                         <input type="checkbox" id="meet" name="meet" value="Yes"><br>
-                        <textarea class="text" id="comment" name="comment" rows="4" cols="50">Leave your message here.</textarea><br>
+                        <textarea class="text" title="Input Text" id="comment" name="comment" rows="4" cols="50">Leave your message here.</textarea><br>
                         
                         <input type="submit" value="send form">
 
