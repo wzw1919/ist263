@@ -78,7 +78,7 @@
                 <br>
                     <form action="mailto:zwang239@syr.edu" class="form" method="POST">
                         <fieldset>
-                        Your Basic Information<br>
+                        <legend>Basic Information</legend><br>
                         <label for = "firstname">First Name</label>
                         <input type = "text" name = "firstname" id = "firstname">
                         <label for = "lastname">Last Name</label>
@@ -90,7 +90,7 @@
                         <label for = "genderFemale">Female</label>
                         <input type = "radio" name = "gender" id = "genderFemale" value="Female"><br><br>
                         
-                        Which school do you attend?<br>
+                        <legend>Which school do you attend?</legend><br>
                         <label for = "schoolNYU">NYU</label>
                         <input type = "radio" name = "school" id = "schoolNYU" value="NYU">
                         <label for = "schoolSyracuse">Syracuse</label>
@@ -107,11 +107,12 @@
                         </select><br><br>
                         </fieldset>
 
-                        What can help you?<br>
+                        <legend>What can help you?</legend><br>
                         <label for="cooperative">cooperative with CSSA</label>
                         <input type="checkbox" id="cooperative" name="cooperative" value="Yes">
                         <label for="meet">Schedule a conversation</label>
                         <input type="checkbox" id="meet" name="meet" value="Yes"><br>
+                        <label for="Input text" class="visuallyhidden">Input text:</label>
                         <textarea class="text" title="Input Text" id="comment" name="comment" rows="4" cols="50">Leave your message here.</textarea><br>
                         
                         <input type="submit" value="send form">
