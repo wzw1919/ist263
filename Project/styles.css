@@ -1,0 +1,35 @@
+header {display: flex;}
+.clear {clear: both;}
+.mainsection {display: flex;}
+.section1 {flex: 1;}
+.section2 {flex: 1;}
+.section3 {flex: 1;}
+
+.sec1 {display: flex;}
+.sec2 {display: flex;}
+.art1 {flex: 1;}
+.art2 {flex: 1;}
+.art3 {flex: 1;}
+.art4 {flex: 1;}
+.art5 {flex: 1;}
+.art6 {flex: 1;}
+
+.sche1 {display: flex;}
+.info1 {flex: 1;}
+.parktime {flex: 1;}
+.table {clear: both;}
+.parkticket {flex: 1; clear: both;}
+.sche2 {display: flex}
+.boattime {flex: 1;}
+.boattable {flex: 1;}
+.parktable {flex: 1;}
+
+.EventBoat {display: flex;}
+.eventtitle {display: flex;}
+.title1 {flex: 1;}
+.title2 {flex: 1;}
+.BoatInstruction {flex: 1;}
+.form1 {flex: 1;}
+.exhibtitle {display: flex;}
+.title3 {flex: 1;}
+.title4 {flex: 1;}
