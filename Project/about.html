@@ -6,49 +6,77 @@
     <meta name="viewport" content="width-device-width, initial-scale=1">
     <title>About Us</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @media only screen and (max-width: 1024px) 
+        {
+            header {display: flex;}
+            #abouttitle {clear: both; padding-left: 30px; padding-right: 30px;}
+            main {display: block;}
+            .sec1 {display: block;}
+            .sec2 {display: block;}
+            .logo1 {display: none;}
+            .logo2 {display: block; max-width: 30%; height: auto;}
+            nav a {display: flex;}
+            header p {
+                display: none;
+            }
+            nav {
+                display: flex;
+                margin-top: 45px;
+                font-size: 1em;
+                background-color: #ffffff23;
+            }
+            #search {display: none;}
+            #head {position: absolute;}
+            .textblock {display: block; position: absolute;}
+            footer {display: block;}
+            .footerimage {padding-top: 30px;}
+            #address {text-align: center; padding:30px; margin-left: 0px;}
+        }
+
+    </style>
 </head>
 
 <header>
-    <img src="../Project/media/image-for-use/logo2.png" class="logo2" alt = "" width="130">
+    <img src="../Project/media/image-for-use/logo1.png" class="logo1" alt = "logo">
+    <img src="../Project/media/image-for-use/logo2.png" class="logo2" alt = "logo">
+    <p>Welcome to Beihai Park!</p>
     <nav>
-        <a href = "home.html">Home</a><span>|</span>
-        <a href = "about.html">About</a><span>|</span>
-        <a href = "schedule.html">Schedule</a><span>|</span>
-        <a href = "events.html">Events</a>
+        <a href = "home.html" id="home">Home</a>
+        <a href = "about.html" id="about">About</a>
+        <a href = "schedule.html" id="time">Schedule</a>
+        <a href = "events.html" id="event">Events</a>
     </nav>
+    <input type="text" id="search" placeholder="Search..">
 </header>
 
-
-<section>
-    <img src="../Project/media/image-for-use/aboutus.jpg" class="aboutus" alt = "" width="400">
+<img src="../Project/media/image-for-use/homepage1.jpg" class="homepage" alt="">
+<section id="abouttitle">
     <h1>About Us</h1>
     <p>
         Located in the center of Beijing, Beihai Park covers an area of 690,000 square meters, including 390,000 square meters for water. It was called Yaoyu (literally the Isle of Precious Jade) in the Liao Dynasty and was established in 1166AD (the 6th year of Dading period of the Jin Dynasty). It used to be a royal place for sightseeing, government affairs handling and sacrifice by emperors and the imperial families of the Liao, Jin, Yuan, Ming, and Qing Dynasties. It is the earliest and best-preserved imperial garden in the world.
     </p>
-    <nav>
-        <a href = "about.html">More</a>
-    </nav>
 </section>
 
-    <h2>Attractions</h2>
+    <h2 id="h2">Attractions</h2>
 <main>
     <section class="sec1">
         <article class="art1">
-            <img src="../Project/media/image-for-use/round_city.jpg" alt="" width="50">
+            <img src="../Project/media/image-for-use/round_city.jpg" alt="">
             <h3>The Round City (Tuancheng)</h3>
             <p>
                 Originally an islet in Taiye Lake, was part of Daning Palace (Grand Palace of Tranquility) during the Jin Dynasty (1115-1234). The Round City occupies an area of 4,500 square meters, surrounded by a 4.6-meter high and 276-meter long city wall. After the founding of the People 's Republic of China, the Round City was rebuilt. In 1961, both the Round City and Beihai Park were listed by the State Council as Key National Cultural Heritage Sites.
             </p>
         </article>
         <article class="art2">
-            <img src="../Project/media/image-for-use/paint_boat.jpg" alt="" width="50">
+            <img src="../Project/media/image-for-use/paint_boat.jpg" alt="">
             <h3>Painted Boat Hall</h3>
             <p>
                 Built in 1757 during the Qing Dynasty (1644-1911), Like a ship moored by the eastern shore of Beihai Park, it is actually an independent architectural complex, comprised of a front hall, a pond at the center, and the main building to the north;  the exquisite eastern and western courtyards are named Guketing and Xiaolinglong,
             </p>
         </article>
         <article class="art3">
-            <img src="../Project/media/image-for-use/Western-Heaven-Temple.jpg"  alt="" width="37">
+            <img src="../Project/media/image-for-use/Western-Heaven-Temple.jpg"  alt="">
             <h3>Western Heaven Temple</h3>
             <p>
                 A lama temple during the Ming Dynasty (1368-1644), was rebuilt and expanded westward in 1759 during the Qing Dynasty. The temple neighbors the Studio of Calmness to the east and the Hall of Full Enlightenment to the west. Located on the same axis with Jade Islet across the lake, this site is one of the best known in Beihai Park.
@@ -58,21 +86,21 @@
 <div class="clear"></div>
     <section class="sec2">
         <article class="art4">
-            <img src="../Project/media/image-for-use/Minor-Western-Heaven.jpg"  alt="" width="37">
+            <img src="../Project/media/image-for-use/Minor-Western-Heaven.jpg"  alt="">
             <h3>Minor Western Heaven</h3>
             <p>
                 Emperor Qianlong built Minor Western Heaven, a two-year construction project (1768-1770), to honor his mother’s birthday and to pray for her happiness and longevity. The core structure “Land of Extreme Happiness”, covering an area of 1,200 square meters with a 13.5-meter transverse beam, is the largest palatial hall in the style of a square pavilion in China. 
             </p>
         </article>
         <article class="art5">
-            <img src="../Project/media/image-for-use/White-Dagoba.jpg"  alt="" width="49">
+            <img src="../Project/media/image-for-use/White-Dagoba.jpg"  alt="">
             <h3>White Dagoba</h3>
             <p>
                 The most famous scene of Beihai Park. Built in 1651, this 35.90-meter-tall dagoba was damaged twice by earthquakes in 1679 and 1730; it was repaired several times, including a major restoration in 1964. A statue of guardian of Beijing is enshrined in this hall. Behind the White Dagoba, where imperial guards were stationed, stand tall flag poles and a copper and iron artillery piece for signaling purposes. 
             </p>
         </article>
         <article class="art6">
-            <img src="../Project/media/image-for-use/nine-dragon-wall.jpg"  alt="" width="37">
+            <img src="../Project/media/image-for-use/nine-dragon-wall.jpg"  alt="">
             <h3>Nine-dragon Screen</h3>
             <p>
                 A type of screen wall with reliefs of nine different Chinese dragons. Such walls are typically found in imperial Chinese palaces and gardens.
@@ -80,3 +108,16 @@
         </article>
     </section>
 </main>
+<hr>
+<footer>
+    <div class="footerimage">
+        <h4>Social Media</h4>
+        <img src="../Project/media/image-for-use/code1.png" id="wbcode" alt="weibo code" width="100">
+        <img src="../Project/media/image-for-use/code2.png" id="wxcode" alt="WeChat code" width="100">
+    </div>
+    <p id="address">
+        North Gate: Take No. 13, 42, 107, 111, 118, 612, 701 and get off at the North Gate of Beihai Park. Take Metro Line 6 and get off at Beihai North<br><br>
+        East Gate: Take No. 5 and get off at Xibanqiao Station<br><br>
+        South Gate and Southwest Gate: Take No. 5, 101, 103, 109, 124, 128, Zhuan 1, Zhuan 2 and get off at Beihai Station
+    </p>
+</footer>
