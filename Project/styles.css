@@ -1,10 +1,60 @@
+html {
+    background-image: url("../Project/media/image-for-use/background.png"); background-repeat: no-repeat; background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 header {display: flex;}
 .clear {clear: both;}
+.logo1 {width: 100px; height: auto;}
+.logo2 {display: none;}
+.homepage {max-width: 100%; height: auto;}
+header p {
+    flex: 3; margin-top: 10px;margin-left: 10px;
+    font-size: 1.25em;
+}
+nav {
+    flex:2; margin-top: 45px;
+    font-size: 1.5em;
+    background-color: #ffffff23;
+}
+#home {margin: 10px;}
+#about {margin: 10px;}
+#time {margin: 10px;}
+#event {margin: 10px;}
+#search {
+    margin-top: 40px; margin-bottom:20px; margin-left: 20px; padding: 10px;
+    border-radius: 2em; font-size: 1em;
+    background-color: #efefec;
+    text-align: left;
+}
+/* Homepage */
 .mainsection {display: flex;}
-.section1 {flex: 1;}
-.section2 {flex: 1;}
-.section3 {flex: 1;}
-
+.section1 {flex: 1; padding: 30px; border: solid #d1d1cc; border-right: none;}
+.section2 {flex: 1; padding: 30px; border: solid #d1d1cc; border-right: none;}
+.section3 {flex: 1; padding: 30px; border: solid #d1d1cc;}
+section a {margin-left: 40%;}
+.timeschedule {
+    max-width: 60%; height: auto; 
+    display: block;
+    margin-left: auto;margin-right: auto;
+}
+#head {position: relative;}
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+    background-color: rgba(0, 0, 0, 0.459);
+    color: #ffffff;
+    padding: 20px;
+    padding-bottom: 20px;
+}
+#more { position:relative; color: #ffffff; margin-left: 0px; border: solid #efefec; border-radius: 2em; width: 15%; left: 0%; text-align: center; padding: 5px;}
+#button {margin-left: 0%; color: #ffffff;}
+/* about us */
+#abouttitle {padding-left: 200px; padding-right: 200px; padding-bottom: 50px; padding-top: 50px;}
+#h2 {text-align: center; background-color: rgba(197, 195, 195, 0.637); padding: 5px;}
+main img {max-width: 40%; height: auto; display: block; margin-left: auto; margin-right: auto; padding: 10px;}
+main h3 {text-align: center;}
+main p {padding-left: 60px; padding-right: 60px; padding-bottom: 40px}
 .sec1 {display: flex;}
 .sec2 {display: flex;}
 .art1 {flex: 1;}
@@ -13,23 +63,38 @@ header {display: flex;}
 .art4 {flex: 1;}
 .art5 {flex: 1;}
 .art6 {flex: 1;}
+/* schedule page */
 
+.schedulepage {max-width: 100%; height: auto;}
+main h1 {text-align: center;}
+main h2 {margin-left: 30px;}
 .sche1 {display: flex;}
 .info1 {flex: 1;}
-.parktime {flex: 1;}
+.parktime {flex: 1; border: 1px solid black; text-align: center;}
+.exhibtime {border: 1px solid black; text-align: center;}
+.boatcost {border: 1px solid black; text-align: center; margin-bottom: 40px;}
 .table {clear: both;}
 .parkticket {flex: 1; clear: both;}
 .sche2 {display: flex}
 .boattime {flex: 1;}
 .boattable {flex: 1;}
 .parktable {flex: 1;}
-
-.EventBoat {display: flex;}
-.eventtitle {display: flex;}
-.title1 {flex: 1;}
-.title2 {flex: 1;}
+/* schedule page */
+.eventpage {max-width: 100%; height: auto;}
+.EventBoat {
+    display: flex;
+}
+.title1 {margin: 50px;}
+.title2 {text-align: center; margin-left: 220px; margin-top: 20px;}
+.title4 {margin-top: 120px;}
+.ExhibInstruction {padding: 40px;}
+.exhibition {float: right;}
 .BoatInstruction {flex: 1;}
 .form1 {flex: 1;}
-.exhibtitle {display: flex;}
-.title3 {flex: 1;}
-.title4 {flex: 1;}
+.form2 {padding: 50px; margin-right: 50%;}
+footer {
+    display: flex; background-color: #000000af;
+    color: #ffffff;
+}
+.footerimage {flex: 1; margin-left: 100px; margin-bottom: 60px; margin-top: 60px;}
+#address {flex: 4; margin-left: 100px; margin-top: 80px; margin-bottom: 60px;}
