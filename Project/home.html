@@ -6,71 +6,112 @@
     <meta name="viewport" content="width-device-width, initial-scale=1">
     <title>Beihai Park</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @media only screen and (max-width: 1024px) 
+        {
+            header {display: flex;}
+            .mainsection {display: block;}
+            .logo1 {display: none;}
+            .logo2 {display: block; max-width: 30%; height: auto;}
+            nav a {display: flex;}
+            header p {
+                display: none;
+            }
+            nav {
+                display: flex;
+                margin-top: 45px;
+                font-size: 1em;
+                background-color: #ffffff23;
+            }
+            #search {display: none;}
+            #head {position: absolute;}
+            .textblock {display: block; position: absolute;}
+            footer {display: block;}
+            .footerimage {padding-top: 30px;}
+            #address {text-align: center; padding:30px; margin-left: 0px;}
+        }
+
+    </style>
 </head>
 
 <header>
-    <img src="../Project/media/image-for-use/logo1.png" class="logo1" alt = "logo" width="70">
+    <img src="../Project/media/image-for-use/logo1.png" class="logo1" alt = "logo">
+    <img src="../Project/media/image-for-use/logo2.png" class="logo2" alt = "logo">
+    <p>Welcome to Beihai Park!</p>
     <nav>
-        <a href = "home.html">Home</a><span>|</span>
-        <a href = "about.html">About</a><span>|</span>
-        <a href = "schedule.html">Schedule</a><span>|</span>
-        <a href = "events.html">Events</a>
+        <a href = "home.html" id="home">Home</a>
+        <a href = "about.html" id="about">About</a>
+        <a href = "schedule.html" id="time">Schedule</a>
+        <a href = "events.html" id="event">Events</a>
     </nav>
+    <input type="text" id="search" placeholder="Search..">
 </header>
 <div class="clear"></div>
 
-    <section>
-        <img src="../Project/media/image-for-use/homepage1.jpg" class="homepage" alt = "" width="1000">
+<img src="../Project/media/image-for-use/homepage1.jpg" class="homepage" alt = "">
+<section id="head">
+    <div class="text-block">
         <h1>Beihai Park</h1>
         <p>
             “One of the oldest parks in Beijing, One of the 10 must-visit attractions in Beijing”
-        </p>
-        <nav>
-            <a href = "about.html">More</a>
+        <nav id="more">
+            <a href = "about.html" id="button">More</a>
         </nav>
-    </section>
-
-<br>
-<main>
-    <div class="mainsection">
-        <div class="section1">
-            <section>
-                <img src="../Project/media/image-for-use/timeschedule.jpg" class="timeschedule" alt="" width="70">
-                <br>
-                <a href = "schedule.html">Time Schedule</a>
-                <p>
-                    Due to COVID-19, We have a brand-new schedule for reopening our park. Please observe all park rules. Form lines when buying tickets and entering buildings.
-                </p>
-            </section>
-        </div>
-
-        <div class="section2">
-            <section>
-                <img src="../Project/media/image-for-use/home-boat.jpg" class="timeschedule" alt="" width="70">
-                <br>
-                <a href = "events.html">Boating</a>
-                <p>
-                    The Taiye Pool in Beihai, the water comes from Yuquan Mountain, is clean and clean, suitable for boating and cool off. It is a rare natural water sports venue in Beijing, and it is located in the center of Beijing.
-                </p>
-            </section>
-        </div>
-
-        <div class="section3">
-            <section>
-                <img src="../Project/media/image-for-use/exhibition.jpg" class="timeschedule" alt="" width="70">
-                <br>
-                <a href = "events.html">Exhibition</a>
-                <p>
-                    An exhibition for the 200-year culture of the Yilantang. Register our Great History and Culture Exhibition of Yilantang Scenic Area 
-
-                </p>
-            </section>
-        </div>
+        </p>
     </div>
-</main>
+</section>
 
+<body>
+    <br>
+    <main>
+        <div class="mainsection">
+            <div class="section1">
+                <section>
+                    <img src="../Project/media/image-for-use/timeschedule.jpg" class="timeschedule" alt="">
+                    <br>
+                    <a href = "schedule.html">Time Schedule</a>
+                    <p>
+                        Due to COVID-19, We have a brand-new schedule for reopening our park. Please observe all park rules. Form lines when buying tickets and entering buildings.
+                    </p>
+                </section>
+            </div>
+
+            <div class="section2">
+                <section>
+                    <img src="../Project/media/image-for-use/home-boat.jpg" class="timeschedule" alt="">
+                    <br>
+                    <a href = "events.html">Boating</a>
+                    <p>
+                        The Taiye Pool in Beihai, the water comes from Yuquan Mountain, is clean and clean, suitable for boating and cool off. It is a rare natural water sports venue in Beijing, and it is located in the center of Beijing.
+                    </p>
+                </section>
+            </div>
+
+            <div class="section3">
+                <section>
+                    <img src="../Project/media/image-for-use/exhibition.jpg" class="timeschedule" alt="">
+                    <br>
+                    <a href = "events.html">Exhibition</a>
+                    <p>
+                        An exhibition for the 200-year culture of the Yilantang. Register our Great History and Culture Exhibition of Yilantang Scenic Area 
+
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
 <br>
-
+<hr>
 <footer>
-    <hr>
+    <div class="footerimage">
+        <h4>Social Media</h4>
+        <img src="../Project/media/image-for-use/code1.png" id="wbcode" alt="weibo code" width="100">
+        <img src="../Project/media/image-for-use/code2.png" id="wxcode" alt="WeChat code" width="100">
+    </div>
+    <p id="address">
+        North Gate: Take No. 13, 42, 107, 111, 118, 612, 701 and get off at the North Gate of Beihai Park. Take Metro Line 6 and get off at Beihai North<br><br>
+        East Gate: Take No. 5 and get off at Xibanqiao Station<br><br>
+        South Gate and Southwest Gate: Take No. 5, 101, 103, 109, 124, 128, Zhuan 1, Zhuan 2 and get off at Beihai Station
+    </p>
 </footer>
