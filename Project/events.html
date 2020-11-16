@@ -6,24 +6,56 @@
     <meta name="viewport" content="width-device-width, initial-scale=1">
     <title>Events</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @media only screen and (max-width: 1024px) 
+        {
+            header {display: flex;}
+            #abouttitle {clear: both; padding-left: 30px; padding-right: 30px;}
+            main {display: block;}
+            .EventBoat {display: block;}
+            .EventExhib {display: block;}
+            .form2 {margin-right: 0%;}
+            .title2 {margin-left: 20px; text-align: left;}
+            .exhibition {float: none;}
+            .logo1 {display: none;}
+            .logo2 {display: block; max-width: 30%; height: auto;}
+            nav a {display: flex;}
+            header p {
+                display: none;
+            }
+            nav {
+                display: flex;
+                margin-top: 45px;
+                font-size: 1em;
+                background-color: #ffffff23;
+            }
+            #search {display: none;}
+            #head {position: absolute;}
+            .textblock {display: block; position: absolute;}
+            footer {display: block;}
+            .footerimage {padding-top: 30px;}
+            #address {text-align: center; padding:30px; margin-left: 0px;}
+        }
+    </style>
 </head>
 
 <header>
-    <img src="../Project/media/image-for-use/logo2.png" class="logo2" alt = "" width="130">
+    <img src="../Project/media/image-for-use/logo1.png" class="logo1" alt = "logo">
+    <img src="../Project/media/image-for-use/logo2.png" class="logo2" alt = "logo">
+    <p>Welcome to Beihai Park!</p>
     <nav>
-        <a href = "home.html">Home</a><span>|</span>
-        <a href = "about.html">About</a><span>|</span>
-        <a href = "schedule.html">Schedule</a><span>|</span>
-        <a href = "events.html">Events</a>
+        <a href = "home.html" id="home">Home</a>
+        <a href = "about.html" id="about">About</a>
+        <a href = "schedule.html" id="time">Schedule</a>
+        <a href = "events.html" id="event">Events</a>
     </nav>
+    <input type="text" id="search" placeholder="Search..">
 </header>
 
 <main>
-    <img src="../Project/media/image-for-use/eventpage.jpg" class="eventpage" alt = "" width="1000">
-    <div class="eventtitle">
+    <img src="../Project/media/image-for-use/eventpage.jpg" class="eventpage" alt = "">
         <h1 class="title1">Boat</h1>
         <h2 class="title2">Registration Form</h2>
-    </div>
     <section class="EventBoat">
         <div class="BoatInstruction">
             <p>
@@ -91,10 +123,7 @@
 <br>
 <br>
 
-    <div class="exhibtitle">
-        <h1 class="title3">Yi Lantang Exhibition</h1>
-        <h2 class="title4">Registration Form</h2>
-    </div>
+    <h1 class="title3">Yi Lantang Exhibition</h1>
     <section class="EventExhib">
         <img src="../Project/media/image-for-use/exhibition.jpg" class="exhibition" alt="" width="700">
         <div class="ExhibInstruction">
@@ -112,6 +141,7 @@
                     •	Do not leave any trash inside the exhibition.<br>
             </p>
         </div>
+        <h2 class="title4">Registration Form</h2>
         <form action="mailto:zwang239@syr.edu" class="form2" method="POST">
             <fieldset>
             <legend>Basic Information</legend><br>
@@ -132,3 +162,16 @@
         </form>
     </section>
 </main>
+<hr>
+<footer>
+    <div class="footerimage">
+        <h4>Social Media</h4>
+        <img src="../Project/media/image-for-use/code1.png" id="wbcode" alt="weibo code" width="100">
+        <img src="../Project/media/image-for-use/code2.png" id="wxcode" alt="WeChat code" width="100">
+    </div>
+    <p id="address">
+        North Gate: Take No. 13, 42, 107, 111, 118, 612, 701 and get off at the North Gate of Beihai Park. Take Metro Line 6 and get off at Beihai North<br><br>
+        East Gate: Take No. 5 and get off at Xibanqiao Station<br><br>
+        South Gate and Southwest Gate: Take No. 5, 101, 103, 109, 124, 128, Zhuan 1, Zhuan 2 and get off at Beihai Station
+    </p>
+</footer>
