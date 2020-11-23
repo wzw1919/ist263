@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <style>
+            html {background-color: #ffbe99; font-family: 'Balsamiq Sans', cursive;}
+            .nav {margin-block: 10px;}
+            .clear {clear: both;}
+            .part1 {display: flex; flex-wrap: wrap; 
+                background-color: #ffffff; border-radius: 3em; padding: 20px;
+                margin-bottom: 20px; border: 2px solid #a1a1a1;
+            }
+            .address {float: right;margin-right: 50px;}
+            .links {float: right; margin-top: 55px;}
+            .part2 {display: flex; flex-wrap: wrap;
+                background-color: #ffffff; 
+                border-radius: 2em; padding: 30px;
+                border: 2px solid #a1a1a1;
+            }
+            .map {flex: 1; order: 2; }
+            .form {flex: 1; order: 1; margin-left: 20px; margin-top: 45px;}
+            .text {flex-wrap: wrap;}
+            nav span {padding: 5px;}
+            @media only screen and (max-width: 992px)
+            {
+                html {background-color: #bbefff;
+                    padding: 20px;
+                }
+                .part2 {display: flex; flex-wrap: wrap; background-color: #ffffff; 
+                    border-radius: 2em; border: 2px solid #a1a1a1;}
+                .map { margin-right: 20px;}
+                .form { margin-right: 20px;}
+                nav a {display: block; padding: 10px;}
+                nav {margin-bottom: 10px;}
+                nav span {display: none;}
+
+            }            
+          
+        </style>
+    </head>
+
+    <body>
+        <header>
+        <nav class="nav">
+            <a href = "index.html">Home</a><span>|</span>
+            <a href = "contact_wang.html">Contact</a><span>|</span>
+            <a href = "skills_wang.html">Skills</a><span>|</span>
+            <a href = "slideshow.html"><strong>Slideshow</strong></a>
+        </nav>
+        </header>
+        <main>
+            <section>
+                <h1>Contact</h1>
+                <div class="clear"></div>
+                <div class="part1">
+                    <div class="address">
+                        <h2>Address</h2>
+                        <p>Ziwen Wang</p>
+                        <p>770 James St, Apt.502<br>Syracuse, NY, 13203</p>
+                    </div>
+                    <br>
+                    <div class="links">
+                        <p><a href = "zwang239@syr.edu">zwang239@syr.edu</a></p>
+                        <img src = "../images/logo-sized.png" alt = "Linkedin Logo" width="30">
+                        <a href = "https://www.linkedin.com/in/ziwen-wang-91b2a917a/" target = "_blank">My Linkedin Profile</a>
+                    </div>
+                </div>
+            </section>
+
+        <br>
+        <section>
+            <div class="part2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.3335451310677!2d-76.1426147489229!3d43.0554519987919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3ac2994e157%3A0x1eac450d218b8c!2s770%20James%20St%2C%20Syracuse%2C%20NY%2013203!5e0!3m2!1sen!2sus!4v1599868198497!5m2!1sen!2sus" class="map" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br>
+                <br>
+                    <form action="mailto:zwang239@syr.edu" class="form" method="POST">
+                        <fieldset>
+                        <legend>Basic Information</legend><br>
+                        <label for = "firstname">First Name</label>
+                        <input type = "text" name = "firstname" id = "firstname">
+                        <label for = "lastname">Last Name</label>
+                        <input type = "text" name = "lastname" id = "lastname"><br>
+                        <label for = "email">Email</label>
+                        <input type = "text" name = "email" id = "email"><br>
+                        <label for = "genderMale">Male</label>
+                        <input type = "radio" name = "gender" id = "genderMale" value="Male">
+                        <label for = "genderFemale">Female</label>
+                        <input type = "radio" name = "gender" id = "genderFemale" value="Female"><br><br>
+                        
+                        <legend>Which school do you attend?</legend><br>
+                        <label for = "schoolNYU">NYU</label>
+                        <input type = "radio" name = "school" id = "schoolNYU" value="NYU">
+                        <label for = "schoolSyracuse">Syracuse</label>
+                        <input type = "radio" name = "school" id = "schoolSyracuse" value="Syracuse"><br>
+
+                        <label for="year">Year:</label>
+                        <select id="year" name="year">
+                            <option value="-">-</option>
+                            <option value = "Freshman">Freshman</option>
+                            <option value = "Sophomore">Sophomore</option>
+                            <option value = "Junior">Junior</option>
+                            <option value = "Senior">Senior</option>
+                            <option>Grad</option>
+                        </select><br><br>
+                        </fieldset>
+
+                        <legend>What can help you?</legend><br>
+                        <label for="cooperative">cooperative with CSSA</label>
+                        <input type="checkbox" id="cooperative" name="cooperative" value="Yes">
+                        <label for="meet">Schedule a conversation</label>
+                        <input type="checkbox" id="meet" name="meet" value="Yes"><br>
+                        <label style="display: none;" for="comment">Input text</label>
+                        <textarea class="text" title="Input Text" id="comment" name="comment" rows="4" cols="50">Leave your message here.</textarea><br>
+                        
+                        <input type="submit" value="send form">
+
+                    </form>
+            </div>
+        </section>
+    </body>
+</html>
