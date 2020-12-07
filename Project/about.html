@@ -38,12 +38,22 @@
         }
     </style>
     <script>
-        function textOff() {
+        function text1Off() {
             document.getElementById('p1').style.display = "none";
+        }
+        function text2Off() {
             document.getElementById('p2').style.display = "none";
+        }
+        function text3Off() {
             document.getElementById('p3').style.display = "none";
+        }
+        function text4Off() {
             document.getElementById('p4').style.display = "none";
+        }
+        function text5Off() {
             document.getElementById('p5').style.display = "none";
+        }
+        function text6Off() {
             document.getElementById('p6').style.display = "none";
         }
         function text1On() {
@@ -93,7 +103,7 @@
 <main>
     <section class="sec1">
         <article class="art1">
-            <img src="../Project/media/image-for-use/round_city.jpg" class="intro" alt="" onclick="textOff(); text1On();">
+            <img src="../Project/media/image-for-use/round_city.jpg" class="intro" alt="" onmouseover="text1On();" onmouseleave="text1Off();">
             <div id="p1">
                 <h3>The Round City (Tuancheng)</h3>
                 <p>
@@ -102,7 +112,7 @@
             </div>
         </article>
         <article class="art2">
-            <img src="../Project/media/image-for-use/paint_boat.jpg" class="intro" alt="" onclick="textOff(); text2On();">
+            <img src="../Project/media/image-for-use/paint_boat.jpg" class="intro" alt="" onmouseover="text2On();" onmouseleave="text2Off();">
             <div id="p2">
                 <h3>Painted Boat Hall</h3>
                 <p>
@@ -111,7 +121,7 @@
             </div>
         </article>
         <article class="art3">
-            <img src="../Project/media/image-for-use/Western-Heaven-Temple.jpg" class="intro"  alt="" onclick="textOff(); text3On();">
+            <img src="../Project/media/image-for-use/Western-Heaven-Temple.jpg" class="intro"  alt="" onmouseover="text3On();" onmouseleave="text3Off();">
             <div id="p3">
                 <h3>Western Heaven Temple</h3>
                 <p>
@@ -123,7 +133,7 @@
 <div class="clear"></div>
     <section class="sec2">
         <article class="art4">
-            <img src="../Project/media/image-for-use/Minor-Western-Heaven.jpg" class="intro" alt="" onclick="textOff(); text4On();">
+            <img src="../Project/media/image-for-use/Minor-Western-Heaven.jpg" class="intro" alt="" onmouseover="text4On();" onmouseleave="text4Off();">
             <div id="p4">
                 <h3>Minor Western Heaven</h3>
                 <p>
@@ -132,7 +142,7 @@
             </div>
         </article>
         <article class="art5">
-            <img src="../Project/media/image-for-use/White-Dagoba.jpg" class="intro"  alt="" onclick="textOff(); text5On();">
+            <img src="../Project/media/image-for-use/White-Dagoba.jpg" class="intro"  alt="" onmouseover="text5On();" onmouseleave="text5Off();">
             <div id="p5">
                 <h3>White Dagoba</h3>
                 <p>
@@ -141,7 +151,7 @@
             </div>
         </article>
         <article class="art6">
-            <img src="../Project/media/image-for-use/nine-dragon-wall.jpg" class="intro"  alt="" onclick="textOff(); text6On();">
+            <img src="../Project/media/image-for-use/nine-dragon-wall.jpg" class="intro"  alt="" onmouseover="text6On();" onmouseleave="text6Off();">
             <div id="p6">
                 <h3>Nine-dragon Screen</h3>
                 <p>
