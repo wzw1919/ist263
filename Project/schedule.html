@@ -11,6 +11,22 @@
         th {border: 1px solid black;}
         td {border: 1px solid black}
         main p {margin-left: 80px;}
+
+        #body {
+            animation: fadeInAnimation ease 5s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        }
+
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        } 
+
         @media only screen and (max-width: 1024px) 
         {
             header {display: flex;}
@@ -19,7 +35,7 @@
             .sche1 {display: block;}
             .sche2 {display: block;}
             .logo1 {display: none;}
-            .logo2 {display: block; max-width: 30%; height: auto;}
+            .logo3 {display: block; max-width: 30%; height: auto;}
             nav a {display: flex;}
             header p {
                 display: none;
@@ -42,7 +58,7 @@
 
 <header>
     <img src="../Project/media/image-for-use/logo1.png" class="logo1" alt = "">
-    <img src="../Project/media/image-for-use/logo2.png" class="logo2" alt = "">
+    <img src="../Project/media/image-for-use/logo3.png" class="logo3" alt = "">
     <p>Welcome to Beihai Park!</p>
     <nav>
         <a href = "home.html" id="home">Home</a>
@@ -50,132 +66,132 @@
         <a href = "schedule.html" id="time">Schedule</a>
         <a href = "events.html" id="event">Events</a>
     </nav>
-    <label style="display: none;" for="search">Input text</label>
-    <input type="text" id="search" placeholder="Search..">
 </header>
 
 <main>
     <img src="../Project/media/image-for-use/schedulepage.jpg" class="schedulepage" alt = "">
-    <h1>Schedule & ticket</h1>
+    <div id="body">
+        <h1>Schedule & ticket</h1>
 
-    <h2>Park Information</h2>
-    <section class="sche1">
-        <div class="parkticket">
-            <h3>Ticket information: </h3>
-            <p class="info1">
-                <strong>*Children younger than 12, elder older than 65 enter the park for free.</strong><br>
-                Peak season: April 1st-October 31st<br>
-                Ticket price: Ticket: 10-yuan Coupon: 20 yuan<br>
-                Low season: November 1st-March 31st<br>
-                Ticket price: Ticket: 5-yuan Coupon ticket: 15 yuan<br>
-            </p>
-        </div>
-        <div class="parktable">
-            <table class="parktime">
-                <caption><strong>opening hours</strong></caption>
-                <tr>
-                    <th>Season</th>
-                    <th>Date</th>
-                    <th>Time<br>(Stop admission 30 mins before close)</th>
-                </tr>
-                <tr>
-                    <td>Peak</td>
-                    <td>April 1st-October 31st</td>
-                    <td>6:30-21:00</td>
-                </tr>
-                <tr>
-                    <td>Low</td>
-                    <td>November 1st-March 31st </td>
-                    <td>6:30-20:00</td>
-                </tr>
-            </table>
+        <h2>Park Information</h2>
+        <section class="sche1">
+            <div class="parkticket">
+                <h3>Ticket information: </h3>
+                <p class="info1">
+                    <strong>*Children younger than 12, elder older than 65 enter the park for free.</strong><br>
+                    Peak season: April 1st-October 31st<br>
+                    Ticket price: Ticket: 10-yuan Coupon: 20 yuan<br>
+                    Low season: November 1st-March 31st<br>
+                    Ticket price: Ticket: 5-yuan Coupon ticket: 15 yuan<br>
+                </p>
+            </div>
+            <div class="parktable">
+                <table class="parktime">
+                    <caption><strong>opening hours</strong></caption>
+                    <tr>
+                        <th>Season</th>
+                        <th>Date</th>
+                        <th>Time<br>(Stop admission 30 mins before close)</th>
+                    </tr>
+                    <tr>
+                        <td>Peak</td>
+                        <td>April 1st-October 31st</td>
+                        <td>6:30-21:00</td>
+                    </tr>
+                    <tr>
+                        <td>Low</td>
+                        <td>November 1st-March 31st </td>
+                        <td>6:30-20:00</td>
+                    </tr>
+                </table>
 
-            <table class="exhibtime">
-                <caption><strong>Exhibition opening hours</strong></caption>
-                <tr>
-                    <th>Season</th>
-                    <th>Date</th>
-                    <th>Time<br>(Stop admission 30 mins before close)</th>
-                </tr>
-                <tr>
-                    <td>Peak</td>
-                    <td>April 1st-October 31st</td>
-                    <td>9:00--18:00</td>
-                </tr>
-                <tr>
-                    <td>Low</td>
-                    <td>November 1st-March 31st </td>
-                    <td>10:00--17:00</td>
-                </tr>
-            </table>
-        </div>
-    </section>
+                <table class="exhibtime">
+                    <caption><strong>Exhibition opening hours</strong></caption>
+                    <tr>
+                        <th>Season</th>
+                        <th>Date</th>
+                        <th>Time<br>(Stop admission 30 mins before close)</th>
+                    </tr>
+                    <tr>
+                        <td>Peak</td>
+                        <td>April 1st-October 31st</td>
+                        <td>9:00--18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Low</td>
+                        <td>November 1st-March 31st </td>
+                        <td>10:00--17:00</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
 
-    <br>
+        <br>
 
-    <h2>Boat Information</h2>
-    <section class="sche2">
-        <div class="boattime">
-            <h3>Boat Event Information</h3>
-            <p>
-                <strong>*Stop admission 1 hour before closing</strong><br>
-                Peak season: April 1st-October 31st   9:00-20:00<br>
-                Low season: November 1st-March 31st   10:00-19:00<br>
-            </p>
-        </div>
+        <h2>Boat Information</h2>
+        <section class="sche2">
+            <div class="boattime">
+                <h3>Boat Event Information</h3>
+                <p>
+                    <strong>*Stop admission 1 hour before closing</strong><br>
+                    Peak season: April 1st-October 31st   9:00-20:00<br>
+                    Low season: November 1st-March 31st   10:00-19:00<br>
+                </p>
+            </div>
 
-        <div class="boattable">
-            <table class="boatcost">
-                <caption><strong>opening hours</strong></caption>
-                <tr>
-                    <th>Boat type</th>
-                    <th>Cost （yuan/hour)</th>
-                    <th>Max of People</th>
-                </tr>
-                <tr>
-                    <td>four-seater pedal boat</td>
-                    <td>4</td>
-                    <td>60 yuan<br>deposit of 200 yuan</td>
+            <div class="boattable">
+                <table class="boatcost">
+                    <caption><strong>opening hours</strong></caption>
+                    <tr>
+                        <th>Boat type</th>
+                        <th>Cost （yuan/hour)</th>
+                        <th>Max of People</th>
+                    </tr>
+                    <tr>
+                        <td>four-seater pedal boat</td>
+                        <td>4</td>
+                        <td>60 yuan<br>deposit of 200 yuan</td>
 
-                </tr>
-                <tr>
-                    <td>six-seater pedal boat</td>
-                    <td>6</td>
-                    <td>120 yuan<br>deposit of 300 yuan</td>
-                </tr>
-                <tr>
-                    <td>The yellow duck pedal boat</td>
-                    <td>4</td>
-                    <td>100 yuan<br>deposit of 300 yuan</td>
-                </tr>
-                <tr>
-                    <td>four-seater battery boat</td>
-                    <td>4</td>
-                    <td>100 yuan<br>deposit of 300 yuan</td>
-                </tr>
-                <tr>
-                    <td>six-seater battery boat</td>
-                    <td>6</td>
-                    <td>160 yuan<br>deposit of 400 yuan</td>
-                </tr>
-                <tr>
-                    <td>Cartoon series battery boat</td>
-                    <td>4</td>
-                    <td>160 yuan<br>deposit of 500 yuan</td>
-                </tr>
-                <tr>
-                    <td>Ferry Boat</td>
-                    <td>10</td>
-                    <td>one-way fare is 15 yuan/person</td>
-                </tr>
-                <tr>
-                    <td>Painted-style Ferry Boat</td>
-                    <td>30</td>
-                    <td>one-way fare is 20 yuan/person</td>
-                </tr>
-            </table>
-        </div>
-    </section>
+                    </tr>
+                    <tr>
+                        <td>six-seater pedal boat</td>
+                        <td>6</td>
+                        <td>120 yuan<br>deposit of 300 yuan</td>
+                    </tr>
+                    <tr>
+                        <td>The yellow duck pedal boat</td>
+                        <td>4</td>
+                        <td>100 yuan<br>deposit of 300 yuan</td>
+                    </tr>
+                    <tr>
+                        <td>four-seater battery boat</td>
+                        <td>4</td>
+                        <td>100 yuan<br>deposit of 300 yuan</td>
+                    </tr>
+                    <tr>
+                        <td>six-seater battery boat</td>
+                        <td>6</td>
+                        <td>160 yuan<br>deposit of 400 yuan</td>
+                    </tr>
+                    <tr>
+                        <td>Cartoon series battery boat</td>
+                        <td>4</td>
+                        <td>160 yuan<br>deposit of 500 yuan</td>
+                    </tr>
+                    <tr>
+                        <td>Ferry Boat</td>
+                        <td>10</td>
+                        <td>one-way fare is 15 yuan/person</td>
+                    </tr>
+                    <tr>
+                        <td>Painted-style Ferry Boat</td>
+                        <td>30</td>
+                        <td>one-way fare is 20 yuan/person</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
 </main>
 <hr>
 <footer>
