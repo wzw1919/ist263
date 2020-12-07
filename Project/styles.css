@@ -6,6 +6,7 @@ header {display: flex;}
 .clear {clear: both;}
 .logo1 {width: 100px; height: auto;}
 .logo2 {display: none;}
+.logo3 {display: none;}
 .homepage {max-width: 100%; height: auto;}
 header p {
     flex: 3; margin-top: 10px;margin-left: 10px;
@@ -20,17 +21,17 @@ nav {
 #about {margin: 10px;}
 #time {margin: 10px;}
 #event {margin: 10px;}
-#search {
-    margin-top: 40px; margin-bottom:20px; margin-left: 20px; padding: 10px;
-    border-radius: 2em; font-size: 1em;
-    background-color: #efefec;
-    text-align: left;
-}
+#home:hover {background-color: darkgray;}
+#about:hover {background-color: darkgray;}
+#time:hover {background-color: darkgray;}
+#event:hover {background-color: darkgray;}
+#button1 {font-size: 1.25em;}
 /* Homepage */
 .mainsection {display: flex;}
-.section1 {flex: 1; padding: 30px; border: solid #d1d1cc; border-right: none;}
-.section2 {flex: 1; padding: 30px; border: solid #d1d1cc; border-right: none;}
-.section3 {flex: 1; padding: 30px; border: solid #d1d1cc;}
+.section1 {flex: 30%; padding: 30px;}
+.section2 {flex: 30%; padding: 30px;}
+.section3 {flex: 30%; padding: 30px;}
+.section1:hover, .section2:hover, .section3:hover {transform: scale(1.1); transition: transform .2s;}
 section a {margin-left: 40%;}
 .timeschedule {
     max-width: 60%; height: auto; 
@@ -63,6 +64,7 @@ main p {padding-left: 60px; padding-right: 60px; padding-bottom: 40px}
 .art4 {flex: 1;}
 .art5 {flex: 1;}
 .art6 {flex: 1;}
+.intro:hover {transform: scale(1.1); transition: transform 1s;}
 /* schedule page */
 
 .schedulepage {max-width: 100%; height: auto;}
